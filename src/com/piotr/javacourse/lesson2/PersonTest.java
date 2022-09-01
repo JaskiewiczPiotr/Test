@@ -47,9 +47,31 @@ int val;
     }
 
 
+
+    @Test
+    public void shouldReturnNumberOfPersonInLoop(){
+        for(int i=0; i<4; i++){
+            Person person1 = new Person();
+        }
+       assertEquals(4, Person.numberOfPersons());
+    }
    // Person person2 = new Person("Jane");
+        @Test
+    public void demonstrationBoolean(){
+        int i = 1;
+        int j = 3;
 
+        if(i>j){
+        printSomethingToScreen();
+        }else if (j>i){
 
+        } else if (i==j) {
+        }
+        }
 
+        public void printSomethingToScreen(){
+        System.out.println("the value i is bigger than j");
+
+        }
 
 }
