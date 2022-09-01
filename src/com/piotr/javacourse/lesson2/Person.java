@@ -4,6 +4,15 @@ import com.piotr.javacourse.lesson3.Name;
 public class Person {
 
     private Name personName;
+    private static int personCounter;
+    public Person(){
+        personCounter++;
+    }
+
+    public static int getPersonCounter() {
+        return personCounter;
+    }
+
 
     private String name;
     public Person(String name){
@@ -33,7 +42,7 @@ public class Person {
         return "Hello"+ " " + name;
     }
 
-    public int numberOfPersons(){
-        return 3;
+    public static int numberOfPersons(){
+        return personCounter;
     }
 }
